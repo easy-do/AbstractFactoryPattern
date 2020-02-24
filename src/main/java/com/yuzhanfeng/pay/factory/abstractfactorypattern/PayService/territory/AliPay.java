@@ -21,6 +21,7 @@ public class AliPay extends ITerritoryPay {
             case "面部":
                 result = new AliPayFaceVerification().verification(payPwType);
                 break;
+
         }
         if (result){
             return "订单:"+orderNumber+",使用支付宝付款"+payNumber;
