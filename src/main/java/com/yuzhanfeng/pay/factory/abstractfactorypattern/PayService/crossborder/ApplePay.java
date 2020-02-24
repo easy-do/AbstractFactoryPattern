@@ -8,7 +8,7 @@ import com.yuzhanfeng.pay.factory.abstractfactorypattern.PayService.territory.IT
 /**
  * Created by 于占峰 on 2020/2/24/024.
  */
-public class ApplePay {
+public class ApplePay extends ICrossBorderPay {
     public String getPay(String orderNumber,Double payNumber,String payPwType){
         boolean result = false;
         switch (payPwType){
